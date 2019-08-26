@@ -34,10 +34,10 @@
 
   <ItemGroup>
     <Reference Include="Mono.Security">
-      <HintPath>..\FinstaGeneric_Api\Tools\Mono.Security.dll</HintPath>
+      <HintPath>..\FinstaGeneric_Api\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql">
-      <HintPath>..\FinstaGeneric_Api\Tools\Npgsql.dll</HintPath>
+      <HintPath>..\FinstaGeneric_Api\Npgsql.dll</HintPath>
     </Reference>
   </ItemGroup>
 
