@@ -1,0 +1,191 @@
+<!-- <div class="col-md-6 col-xl-4">
+  <div>
+      <select id="country" [(ngModel)]="loannametype" style="width:300px;">
+          <option value="" ng-selected="selected">Select</option>
+          <option *ngFor="let loan of loans" [value]="loan.value"> {{loan.name}}</option>
+      </select>
+  </div>
+  </div> -->
+
+
+<div class="row">
+  <div class="col-12 mt-5 p-0">
+    <p class="bc-2">Loan Name and Code</p>
+  </div>
+</div>
+<form [formGroup]="Loansnamescodeform">
+  <div class="row mt-1">
+    <!--  <div class="col-12">
+    <h2 class="sec-head">Personal Details</h2>
+    </div>-->
+    <div class="col-md-6 col-xl-4">
+      <div class="form-group">
+        <label id="pLoantypeid" title="Loan Type">* Loan Type</label>
+        <select class="form-control" placeholder="Loan Type" (change)="ChangeLoanType($event)" formControlName="pLoantypeid" [ngClass]="{ 'is-invalid': f.pLoantypeid.errors && f.pLoantypeid.touched}">
+          <option value="" ng-selected="selected">Select</option>
+          <option *ngFor="let loan of loans" [value]="loan.pLoantypeid"> {{loan.pLoantype}}</option>
+        </select>
+        <div class="invalid-feedback">
+          Doesn't look good!
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--col-end-->
+    <div class="col-md-6 col-xl-4">
+      <div class="form-group">
+        <label>* Loan Name</label>
+        <input appTitlecaseword class="form-control" (blur)="GenerateLoanCode($event)" formControlName="pLoanname" type="text" placeholder="Enter Loan Name" value="" [ngClass]="{ 'is-invalid': f.pLoanname.errors && f.pLoanname.touched }">
+        <!-- <small class="form-text clr-orange"></small> -->
+        <div class="invalid-feedback">
+          Loan Name is Required
+        </div>
+      </div>
+    </div>
+    <!--col-end-->
+    <div class="col-md-6 col-xl-4">
+      <div class="form-group">
+        <label>* Loan code</label>
+        <input class="form-control" type="text" (blur)="CheckLoanCodeDuplicate()" formControlName="pLoancode" placeholder="Loan Code" [ngClass]="{ 'is-invalid': f.pLoancode.errors && f.pLoancode.touched }">
+        <!--<small class="form-text">Error message or hint will go here</small>-->
+      </div>
+    </div>
+    <hr>
+
+    <!--col-end-->
+    <div class="col-md-6 col-xl-4">
+      <div class="row">
+        <div class="col-md-6 col-xl-6 m-0">
+          <div class="form-group m-0">
+            <label>Company Code</label>
+          </div>
+          <div class="form-group m-0">
+            <label class="font-weight-bold text-grey">{{Ccode}}</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-6 m-0">
+          <div class="form-group m-0">
+            <label>Branch Code</label>
+          </div>
+          <div class="form-group m-0">
+            <label class="font-weight-bold text-grey">{{Bcode}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--col-end-->
+    <div class="col-md-6 col-xl-4">
+      <div class="form-group m-0">
+        <label>Series</label>
+      </div>
+      <div class="form-group m-0">
+        <input appNumbersonly class="form-control" (blur)="GenerateSeries($event)" maxlength="5" formControlName="pSeries" type="text" placeholder="101" [ngClass]="{ 'is-invalid': f.pSeries.errors && f.pSeries.touched }">
+      </div>
+    </div>
+    <div class="col-md-6 col-xl-4">
+      <div class="form-group m-0">
+        <label>Loan Name and Code</label>
+      </div>
+      <div class="form-group ">
+        <label class="font-weight-bold text-grey">{{Lnamecode}}</label>
+      </div>
+    </div>
+    <hr>
+    <div class="col-md-6 col-xl-4">
+      <div>
+        <p class="mb-2 cb-l">Status</p>
+      </div>
+      <div class="form-check form-check-inline mr-5">
+        <input class="form-check-input" type="radio" (change)="CheckStatus($event)" formControlName="pStatusname" id="1" value="Active">
+        <label class="form-check-label" for="1">Active</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" (change)="CheckStatus($event)" formControlName="pStatusname" id="2" value="Inactive">
+        <label class="form-check-label" for="2">Inactive</label>
+      </div>
+    </div>
+    <!--col-end-->
+  </div>
+  <!--row-end-->
+  <!--row-end-->
+</form>
+<!--form-end--><!--form-end-->
+<!--row-end-->
+<div class="d-flex justify-content-end mt-4"> <a (click)="Clear()" class="btn btn-g-icon mr-4 px-3 border-0"><img src="assets/images/icon-cancel-white.svg" width="20px" height="20px" class="mr-3" />Clear</a> <a (click)="NextTabClick()" data-toggle="tab" class="btn btn-b-icon px-3 border-0" role="tab" aria-controls="hot" aria-selected="false"><img src="assets/images/icon-chewron-right-whitesolid.svg" width="20px" height="20px" class="mr-3" />Next</a> </div>
+<!--buttons-end-->
+<!-- <div class="row mt-5">
+    <div class="col-md-12 col-xl-12">
+        <table id="example" class="table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Loan Type</th>
+                    <th>Loan Name</th>
+                    <th>Loan Code</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vehicle loan</td>
+                    <td>Vehicle - 2 Wheeler Loan</td>
+                    <td>VLV2W00100001</td>
+                    <td>Active</td>
+                    <td hidden>
+                        <a href="#">
+                            <div id="icon-edit"></div>
+                        </a> <a href="#">
+                            <div id="icon-delete"></div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vehicle loan</td>
+                    <td>Used Vehicle Loan</td>
+                    <td>VLUVL001001001</td>
+                    <td>Active</td>
+                    <td hidden>
+                        <a href="#">
+                            <div id="icon-edit"></div>
+                        </a> <a href="#">
+                            <div id="icon-delete"></div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vehicle loan</td>
+                    <td>Commercial Vehicle Loan</td>
+                    <td>VLCVL001001001</td>
+                    <td>Active</td>
+                    <td hidden>
+                        <a href="#">
+                            <div id="icon-edit"></div>
+                        </a> <a href="#">
+                            <div id="icon-delete"></div>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+
+
+<div class="row py-2 overflow-y-auto height-350">
+  <div class="col-12">
+    <table id="Transfer"
+           class="table"
+           cellspacing="0" width="100%" style="width:100%">
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>

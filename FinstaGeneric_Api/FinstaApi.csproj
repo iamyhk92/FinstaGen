@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Accounting\Masters\" />
+    <Folder Include="Controllers\Accounting\Reports\" />
+    <Folder Include="Controllers\Accounting\Transactions\" />
+    <Folder Include="Controllers\Banking\Masters\" />
+    <Folder Include="Controllers\Banking\Reports\" />
+    <Folder Include="Controllers\Banking\Transactions\" />
+    <Folder Include="Controllers\Home\" />
+    <Folder Include="Controllers\Loans\Reports\" />
+    <Folder Include="Controllers\Loans\Transactions\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinstaGenericInfrastructure\FinstaInfrastructure.csproj" />
+    <ProjectReference Include="..\FinstaGenericRepository\FinstaRepository.csproj" />
+  </ItemGroup>
+
+</Project>

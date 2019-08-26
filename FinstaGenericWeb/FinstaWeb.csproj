@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PresentationPages\src\app\Services\common.ts" />
+    <None Remove="PresentationPages\src\app\UI\Home\dashboard.html" />
+    <None Remove="PresentationPages\src\app\UI\Home\navigation.html" />
+    <None Remove="PresentationPages\src\app\UI\Loans\Masters\charges\charges.html" />
+    <None Remove="PresentationPages\src\app\UI\Loans\Masters\contact\contact-view.component.ts" />
+    <None Remove="PresentationPages\src\app\UI\Loans\Masters\contact\contact.html" />
+    <None Remove="PresentationPages\src\app\UI\Loans\Masters\documents\documents.html" />
+    <None Remove="PresentationPages\src\app\UI\Loans\Masters\loans\loans-creation.html" />
+    <None Remove="PresentationPages\src\app\UI\Loans\Masters\scheme\scheme.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\addressformat.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\charactersonly.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\emailpattern.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\mycurrency-formatter.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\newline.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\numbersonly.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\Directives\titlecaseword.directive.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Home\dashboard.component.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Home\navigation.component.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Loans\Masters\charges\charges.component.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Loans\Masters\contact\contact.component.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Loans\Masters\documents\documents.component.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Loans\Masters\loans\loans-creation.component.ts" />
+    <TypeScriptCompile Remove="PresentationPages\src\app\UI\Loans\Masters\loans\scheme.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PresentationPages\src\app\UI\Home\dashboard.html" />
+    <Content Include="PresentationPages\src\app\UI\Home\navigation.html" />
+    <Content Include="PresentationPages\src\app\UI\Loans\Masters\charges\charges.html" />
+    <Content Include="PresentationPages\src\app\UI\Loans\Masters\contact\contact.html" />
+    <Content Include="PresentationPages\src\app\UI\Loans\Masters\documents\documents.html" />
+    <Content Include="PresentationPages\src\app\UI\Loans\Masters\loans\loans-creation.html" />
+    <Content Include="PresentationPages\src\app\UI\Loans\Masters\scheme\scheme.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.6.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinstaGenericInfrastructure\FinstaInfrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PresentationPages\src\app\Models\" />
+    <Folder Include="PresentationPages\src\app\Services\Accounting\Masters\" />
+    <Folder Include="PresentationPages\src\app\Services\Accounting\Reports\" />
+    <Folder Include="PresentationPages\src\app\Services\Accounting\Transactions\" />
+    <Folder Include="PresentationPages\src\app\Services\Banking\Masters\" />
+    <Folder Include="PresentationPages\src\app\Services\Banking\Reports\" />
+    <Folder Include="PresentationPages\src\app\Services\Banking\Transactions\" />
+    <Folder Include="PresentationPages\src\app\Services\Home\" />
+    <Folder Include="PresentationPages\src\app\Services\Loans\Masters\contact\" />
+    <Folder Include="PresentationPages\src\app\Services\Loans\Reports\" />
+    <Folder Include="PresentationPages\src\app\Services\Loans\Transactions\" />
+    <Folder Include="PresentationPages\src\app\Services\Settings\Masters\" />
+    <Folder Include="PresentationPages\src\app\Services\Settings\Reports\" />
+    <Folder Include="PresentationPages\src\app\Services\Settings\Transactions\" />
+    <Folder Include="PresentationPages\src\app\UI\Accounting\Masters\" />
+    <Folder Include="PresentationPages\src\app\UI\Accounting\Reports\" />
+    <Folder Include="PresentationPages\src\app\UI\Accounting\Transactions\" />
+    <Folder Include="PresentationPages\src\app\UI\Banking\Masters\" />
+    <Folder Include="PresentationPages\src\app\UI\Banking\Reports\" />
+    <Folder Include="PresentationPages\src\app\UI\Banking\Transactions\" />
+    <Folder Include="PresentationPages\src\app\UI\Loans\Reports\" />
+    <Folder Include="PresentationPages\src\app\UI\Loans\Transactions\" />
+    <Folder Include="PresentationPages\src\app\UI\Settings\" />
+  </ItemGroup>
+
+</Project>

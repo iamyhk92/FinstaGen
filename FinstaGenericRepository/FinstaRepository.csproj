@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\Accounting\Masters\" />
+    <Folder Include="DataAccess\Accounting\Reports\" />
+    <Folder Include="DataAccess\Accounting\Transactions\" />
+    <Folder Include="DataAccess\Banking\Masters\" />
+    <Folder Include="DataAccess\Banking\Reports\" />
+    <Folder Include="DataAccess\Banking\Transactions\" />
+    <Folder Include="DataAccess\Home\" />
+    <Folder Include="DataAccess\Loans\Reports\" />
+    <Folder Include="DataAccess\Loans\Transactions\" />
+    <Folder Include="Interfaces\Accounting\Masters\" />
+    <Folder Include="Interfaces\Accounting\Reports\" />
+    <Folder Include="Interfaces\Accounting\Transactions\" />
+    <Folder Include="Interfaces\Banking\Masters\" />
+    <Folder Include="Interfaces\Banking\Reports\" />
+    <Folder Include="Interfaces\Banking\Transactions\" />
+    <Folder Include="Interfaces\Loans\Reports\" />
+    <Folder Include="Interfaces\Loans\Transactions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0-preview7.19362.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinstaGenericInfrastructure\FinstaInfrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\FinstaGeneric_Api\Tools\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\FinstaGeneric_Api\Tools\Npgsql.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

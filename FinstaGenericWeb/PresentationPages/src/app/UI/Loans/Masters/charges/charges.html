@@ -1,0 +1,1360 @@
+<ul class="nav nav-tabs tip-top wiz-tab mt-5" id="myTab" role="tablist">
+  <li class="nav-item" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Create Charge"> <a class="active" data-toggle="tab" href="#createcharge" role="tab" aria-controls="createcharge" aria-selected="true">1</a> </li>
+  <li class="nav-item" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Add Charge"> <a class="" data-toggle="tab" href="#applycharge" role="tab" aria-controls="preclosurecharge" aria-selected="false">2</a> </li>
+  <li class="nav-item" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Charge Amount"> <a class="" data-toggle="tab" href="#Chargeamount" role="tab" aria-controls="preclosurecharge" aria-selected="false">3</a> </li>
+  <li class="nav-item" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Preclosure Charges"> <a class="" data-toggle="tab" href="#Preclosurecharges" role="tab" aria-controls="preclosurecharge" aria-selected="false">4</a> </li>
+</ul>
+<div class="btn-group quick-links">
+  <a class="btn btn-block dropdown-toggle mt-1 sm-dd" data-toggle="dropdown" href="#">Create Charge<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li class="dropdown-item"><a href="#">Create Charge </a></li>
+    <li class="dropdown-item"><a href="#">Add Charge</a></li>
+    <li class="dropdown-item"><a href="#">Charge Amount</a></li>
+    <li class="dropdown-item"><a href="#">Preclosure Charges</a></li>
+  </ul>
+</div>
+<!-- ======================================================================= tab nav end ============================================================================== -->
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade active show " id="createcharge" role="tabpanel" aria-labelledby="createcharge">
+    <div class="row">
+      <div class="col-12 mt-5 p-0">
+        <p class="bc-2">Create Charge</p>
+      </div>
+    </div>
+    <form>
+      <div class="row mt-1">
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <label>Enter charge or fee name</label>
+            <input class="form-control" type="text" value="">
+          </div>
+        </div>
+        <!--col-end-->
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-6 col-xl-4 mt-4"> <a href="#" class="btn btn-b-icon border-0"><img src="assets/images/icon-add-white.svg" width="20px" height="20px" class="mr-3" />Add to grid</a> </div>
+      </div>
+      <!--row-end-->
+    </form><!--form-end-->
+
+    <div class="row mt-5">
+      <div class="col-md-12 col-xl-12">
+        <table id="example" class="table w-auto">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Charge</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Documentation Charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Stamp duty charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Cheque/Nach bounce charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Swap Charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Duplicate statement issuance charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Duplicate amortisation issuance charge</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Duplicate Interest Certificate</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>CIC report issuance charge</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>CIBIL charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Duplicate Loan agreement copy charge</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Hypothecation charge</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Legal charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Membership Fees</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Storage charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Valuation charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Insurance Premium</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>EMI Date change charges</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>MODT (Memorandum of Deposit of Title Deed) Charge</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Technical evaluation Fee</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Franking fee on sale agreement</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>Notary fee</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>Insurance Premium</td>
+              <td>
+                <a href="#">
+                  <div id="icon-edit"></div>
+                </a> <a href="#">
+                  <div id="icon-delete"></div>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div><!-- =======tab1 end ==== -->
+
+  <div class="tab-pane fade" id="applycharge" role="tabpanel" aria-labelledby="applycharge">
+    <div class="row">
+      <div class="col-12 mt-5  p-0">
+        <p class="bc-2">Add Charge</p>
+      </div>
+    </div>
+    <form>
+      <div class="row mt-1">
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <label>Select Loan Type</label>
+            <select class="form-control ">
+              <option>Applicable to all loan types</option>
+              <option>Vehicle Loan</option>
+              <option>Gold Loan</option>
+              <option>Loan against Property</option>
+              <option>Home Loan</option>
+              <option>Education Loan</option>
+              <option>Term Loan</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <label>Select Loan code</label>
+            <select class="form-control">
+              <option>Applicable to all loan codes</option>
+              <option>2 wheeler Loans</option>
+              <option>4 wheeler Loans</option>
+              <option>Commercial Vehicle Loans</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 col-xl-12">
+          <div style="height:300px; overflow-y:scroll">
+            <table id="example" class="table w-auto">
+              <thead class="position-sticky fixed-top bg-white">
+                <tr>
+                  <th>S.No</th>
+                  <th>Select Charge</th>
+                  <th>Charge</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Documentation Charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Stamp duty charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Cheque/Nach bounce charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Swap Charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Duplicate statement issuance charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Duplicate amortisation issuance charge</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Duplicate Interest Certificate</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>CIC report issuance charge</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>CIBIL charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Duplicate Loan agreement copy charge</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Hypothecation charge</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Legal charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Membership Fees</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Storage charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Valuation charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Insurance Premium</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>EMI Date change charges</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>MODT (Memorandum of Deposit of Title Deed) Charge</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Technical evaluation Fee</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Franking fee on sale agreement</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Notary fee</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>
+                    <div class="form-check form-check-inline mr-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    </div>
+                  </td>
+                  <td>Insurance Premium</td>
+                  <td>
+                    <a href="#">
+                      <div id="icon-edit"></div>
+                    </a> <a href="#">
+                      <div id="icon-delete"></div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-6 col-xl-4 mt-4"> <a href="#" class="btn btn-b-icon border-0"><img src="assets/images/icon-check-white.svg" width="20px" height="20px" class="mr-3" />Apply and Save</a> </div>
+      </div>
+    </form>
+    <!--buttons-end-->
+  </div><!-- =======tab2 end ==== -->
+
+  <div class="tab-pane fade" id="Chargeamount" role="tabpanel" aria-labelledby="Chargeamount">
+    <div class="row">
+      <div class="col-12 mt-5 p-0">
+        <p class="bc-2">Charge Amount</p>
+      </div>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <label>Select Loan Type</label>
+            <select class="form-control">
+              <option>Applicable to all loan types</option>
+              <option>Vehicle Loan</option>
+              <option>Gold Loan</option>
+              <option>Loan against Property</option>
+              <option>Home Loan</option>
+              <option>Education Loan</option>
+              <option>Term Loan</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <label>Select Loan code</label>
+            <select class="form-control">
+              <option>Applicable to all loan codes</option>
+              <option>2 wheeler Loans</option>
+              <option>4 wheeler Loans</option>
+              <option>Commercial Vehicle Loans</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <label>Select Charge/Fee</label>
+            <select class="form-control">
+              <option>Processing Fee</option>
+              <option>Documentation Charges</option>
+              <option>Stamp Duty Charges</option>
+              <option>Cheque/Nach Bounce Charges</option>
+              <option>Pre-Payment / Foreclosure Charges</option>
+              <option>SWAP Charges (from PDC to ECS)</option>
+              <option>Duplicate Statement issuance charges</option>
+              <option>Duplicate amortisation issuance charges</option>
+              <option>Duplicate Interest Certificate</option>
+              <option>CIC report issuance charge</option>
+              <option>CIBIL Charges</option>
+              <option>Duplicate Loan Agreement copy charge</option>
+              <option>Hypothecation Charge</option>
+              <option>Legal charges</option>
+              <option>Membership Fees</option>
+              <option>Storage Charges</option>
+              <option>Valuation charges</option>
+              <option>Insurance Premium</option>
+              <option>EMI Date Change charges</option>
+              <option>MODT (Memorandum of Deposit of Title Deed) Charge</option>
+              <option>Intimation of registration fee</option>
+              <option>Technical evaluation fee</option>
+              <option>Franking fee on sale agreement</option>
+              <option>Notary fee</option>
+              <option>Insurance fee</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 col-xl-6">
+          <div class="form-check form-check-inline mr-5">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="chargedepend" value="dependentonloan">
+            <label class="p-0 m-2" for="inlineRadio1"> Charge <strong class="sec-head-bold">is dependent </strong>on loan range</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-6">
+          <div class="form-check form-check-inline mr-5">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="chargedepend" value="nondependentonloan">
+            <label class="p-0 m-2" for="inlineRadio1">Charge <strong class="sec-head-bold"> is not dependent</strong> on loan range</label>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="dependentonloan radio-toggle">
+        <div class="row">
+          <div class=" col-md-12 col-xl-12">
+            <h2 class="sec-head-bold">Processing Fee</h2>
+          </div>
+          <div class=" col-md-4 col-xl-4">
+            <div class="form-group">
+              <label>Select Applicant type</label>
+              <select class="form-control">
+                <option>All</option>
+                <option>Regular/ General</option>
+                <option>Senior Citizen</option>
+                <option>Minor</option>
+                <option>Women</option>
+                <option>Business Entity</option>
+                <option>None</option>
+              </select>
+            </div>
+          </div>
+          <div class=" col-md-4 col-xl-4">
+            <div class="form-group mt-4">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="range" value="onamount">
+                <label class="p-0 m-2" for="inlineRadio1">On Value</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="range" value="ontenure">
+                <label class="p-0 m-2" for="inlineRadio1">On Tenure </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="onamount radio-toggle">
+          <hr>
+          <div class="row">
+            <div class="col-md-4 col-xl-4">
+              <h2 class="sec-head">Range</h2>
+              <div class="row">
+                <div class="">
+                  <div class="d-flex">
+                    <div class="col-md-6 col-xl-6">
+                      <div class="form-group">
+                        <label>Min Loan Value</label>
+                        <input class="form-control" type="text" value="1,00,000">
+                        <small class="form-text clr-orange"></small>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-6">
+                      <div class="form-group">
+                        <label>Max Loan Value</label>
+                        <input class="form-control" type="text" value="30,00,000">
+                        <small class="form-text clr-orange"></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-4">
+              <h2 class="sec-head">Charge</h2>
+              <div class="row">
+                <div class="col-md-6 col-xl-6">
+                  <div class="form-group">
+                    <label>Min Charge </label>
+                    <input class="form-control" type="text" value="1,00,000">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                  <div class="form-group">
+                    <label>Max Charge</label>
+                    <input class="form-control" type="text" value="30,00,000">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-4 mt-3">
+              <div class="form-group">
+                <label>Percentage (%)</label>
+                <input class="form-control" type="text" value="0.50">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-xl-2 mt-4"> <a href="#" class="btn btn-b-icon float-left ml-0"><img src="images/icon-add-white.svg" width="20" height="20"> Add to Grid</a> </div>
+          </div>
+          <table id="example" class="table w-auto">
+            <thead>
+              <tr>
+                <th>Min. Loan Value</th>
+                <th>Max. Loan Value</th>
+                <th>Percentange (%)</th>
+                <th>Minimum Fee / Charge</th>
+                <th>Maximum Fee / Charge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1,00,000</td>
+                <td>30,00,000</td>
+                <td>0.50</td>
+                <td>3,500</td>
+                <td>12,500</td>
+              </tr>
+              <tr>
+                <td>30,00,001</td>
+                <td>75,00,000</td>
+                <td>0.50</td>
+                <td>15,000</td>
+                <td>35,000</td>
+              </tr>
+              <tr>
+                <td>75,00,001</td>
+                <td>1,00,00,000</td>
+                <td>0.40</td>
+                <td>30,000</td>
+                <td>40,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+
+          <div class="d-flex">
+
+            <div class="form-group p-0 m-0 ">
+              <label>Select whether Charge / Fee amount Is calculated on</label>
+
+            </div>
+            <div class="talk-bubble position-absolute  tri-right  round left-top" style="left:400px;">
+              <div class="talktext">
+                <p>The charge/fee cannot exceed the <strong class="sec-head-bold"> maximum fee / charge amount</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charge" value="option1">
+              <label class="mt-1" for="inlineRadio1">Sanctioned Loan amount </label>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charge" value="option1">
+              <label class="mt-1" for="inlineRadio1">Disbursed Loan amount</label>
+            </div>
+          </div>
+          <h2 class="sec-head-bold mt-1"> GST is</h2>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+              <label class="mt-1" for="inlineRadio1"> Included</label>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="form-group m-0 p-0">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="excluded">
+                <label class="mt-1" for="inlineRadio1"> Excluded </label>
+              </div>
+            </div>
+            <div class="form-group m-0 p-0">
+              <div class=" excluded radio-toggle">
+                <div class="d-flex">
+                  <label class="mt-1 mr-2" for="inlineRadio1"> GST %</label>
+                  <input class="form-control w-auto" type="text" value="%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+              <label class="mt-1" for="inlineRadio1"> No GST</label>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end  mt-4"> <a href="#" class="btn btn-b-icon mr-4 px-3 border-0"><img src="images/icon-add-white.svg" width="20px" height="20px" class="mr-3" />Add Charge</a> <a href="#" class="btn btn-g-icon mr-4 px-3 border-0"><img src="images/icon-seach-white.svg" width="20px" height="20px" class="mr-3" />View</a> <a href="#" class="btn btn-b-icon px-3 border-0"><img src="images/icon-check-white.svg" width="20px" height="20px" class="mr-3" />Save</a> </div>
+        </div>
+        <div class="ontenure radio-toggle">
+          <hr>
+          <div class="row">
+            <div class="col-md-4 col-xl-4">
+              <h2 class="sec-head">Range</h2>
+              <div class="row">
+                <div class="	">
+                  <div class="d-flex">
+                    <div class="col-md-6 col-xl-6">
+                      <div class="form-group">
+                        <label>Min Tenure</label>
+                        <input class="form-control" type="text" value="10month">
+                        <small class="form-text clr-orange"></small>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-6">
+                      <div class="form-group">
+                        <label>Max Tenure</label>
+                        <input class="form-control" type="text" value="10month">
+                        <small class="form-text clr-orange"></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-4">
+              <h2 class="sec-head">Charge</h2>
+              <div class="row">
+                <div class="col-md-6 col-xl-6">
+                  <div class="form-group">
+                    <label>Min Charge </label>
+                    <input class="form-control" type="text" value="1,00,000">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                  <div class="form-group">
+                    <label>Max Charge</label>
+                    <input class="form-control" type="text" value="30,00,000">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-4 mt-3">
+              <div class="form-group">
+                <label>Percentage (%)</label>
+                <input class="form-control" type="text" value="0.50">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-xl-2 mt-4"> <a href="#" class="btn btn-b-icon float-left ml-0"><img src="images/icon-add-white.svg" width="20" height="20"> Add to Grid</a> </div>
+          </div>
+          <table id="example" class="table w-auto">
+            <thead>
+              <tr>
+                <th>Min. Loan Value</th>
+                <th>Max. Loan Value</th>
+                <th>Percentange (%)</th>
+                <th>Minimum Fee / Charge</th>
+                <th>Maximum Fee / Charge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1,00,000</td>
+                <td>30,00,000</td>
+                <td>0.50</td>
+                <td>3,500</td>
+                <td>12,500</td>
+              </tr>
+              <tr>
+                <td>30,00,001</td>
+                <td>75,00,000</td>
+                <td>0.50</td>
+                <td>15,000</td>
+                <td>35,000</td>
+              </tr>
+              <tr>
+                <td>75,00,001</td>
+                <td>1,00,00,000</td>
+                <td>0.40</td>
+                <td>30,000</td>
+                <td>40,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+
+          <div class="d-flex">
+
+            <div class="form-group p-0 m-0 ">
+              <label>Select whether Charge / Fee amount Is calculated on</label>
+
+            </div>
+            <div class="talk-bubble position-absolute  tri-right  round left-top" style="left:400px;">
+              <div class="talktext">
+                <p>The charge/fee cannot exceed the <strong class="sec-head-bold"> maximum fee / charge amount</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="mt-1" for="inlineRadio1">Sanctioned Loan amount </label>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="mt-1" for="inlineRadio1">Disbursed Loan amount</label>
+            </div>
+          </div>
+          <h2 class="sec-head-bold mt-1"> GST is</h2>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+              <label class="mt-1" for="inlineRadio1"> Included</label>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="form-group m-0 p-0">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="excluded">
+                <label class="mt-1" for="inlineRadio1"> Excluded </label>
+              </div>
+            </div>
+            <div class="form-group m-0 p-0">
+              <div class=" excluded radio-toggle">
+                <div class="d-flex">
+                  <label class="mt-1 mr-2" for="inlineRadio1"> GST %</label>
+                  <input class="form-control w-auto" type="text" value="%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+              <label class="mt-1" for="inlineRadio1"> No GST</label>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end  mt-4"> <a href="#" class="btn btn-b-icon mr-4 px-3 border-0"><img src="images/icon-add-white.svg" width="20px" height="20px" class="mr-3" />Add Charge</a> <a href="#" class="btn btn-g-icon mr-4 px-3 border-0"><img src="images/icon-seach-white.svg" width="20px" height="20px" class="mr-3" />View</a> <a href="#" class="btn btn-b-icon px-3 border-0"><img src="images/icon-check-white.svg" width="20px" height="20px" class="mr-3" />Save</a> </div>
+        </div>
+      </div>
+      <div class="nondependentonloan radio-toggle">
+        <div class="row">
+          <div class=" col-md-12 col-xl-12">
+            <h2 class="sec-head-bold mt-2 bt-2">Processing Fee</h2>
+          </div>
+          <br>
+          <div class="col-md-6 col-xl-4">
+            <div class="form-group">
+              <h2 class="sec-head">Charge Type</h2>
+              <div class="d-flex">
+                <div class="form-check form-check-inline mr-5">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="chargetype" value="fixedcharge">
+                  <label class="mt-1" for="inlineRadio2"> Fixed </label>
+                </div>
+                <div class="fixedcharge radio-toggle">
+                  <input class="form-control w-auto" type="text" placeholder="Rs.">
+                </div>
+              </div>
+              <div class="form-group m-0">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="chargetype" value="percentagecharge">
+                  <label class="mt-1" for="inlineRadio2"> Percentage </label>
+                </div>
+              </div>
+              <div class=" p-2 percentagecharge radio-toggle border">
+                <label class="sec-head">Select whether Charge / Fee amount Is calculated on</label>
+                <div class="form-check form-check-inline mr-5">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="" value="">
+                  <label class="mt-1" for="inlineRadio2"> Sanctioned Loan Value </label>
+                </div>
+                <div class="form-check form-check-inline mr-5">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="" value="">
+                  <label class="mt-1" for="inlineRadio2">Disbursed Loan Value</label>
+                </div>
+                <input class="form-control w-auto" type="text" placeholder="%">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <h2 class="sec-head-bold mt-1"> GST is</h2>
+            <div class="form-group m-0 p-0">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+                <label class="mt-1" for="inlineRadio1"> Included</label>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="form-group m-0 p-0">
+                <div class="form-check form-check-inline mr-5">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="excluded">
+                  <label class="mt-1" for="inlineRadio1"> Excluded </label>
+                </div>
+              </div>
+              <div class="form-group m-0 p-0">
+                <div class=" excluded radio-toggle">
+                  <div class="d-flex">
+                    <label class="mt-1 mr-2" for="inlineRadio1"> GST %</label>
+                    <input class="form-control w-auto" type="text" value="%">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group m-0 p-0">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+                <label class="mt-1" for="inlineRadio1"> No GST</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-xl-12">
+          <div class="d-flex justify-content-end mt-4"> <a href="#" class="btn btn-g-icon mr-4 px-3 border-0"><img src="images/icon-cancel-white.svg" width="20px" height="20px" class="mr-3" />Clear</a> <a href="#" data-toggle="tab" class="btn btn-b-icon px-3 border-0" role="tab" aria-controls="hot" aria-selected="false"><img src="images/icon-check-white.svg" width="20px" height="20px" class="mr-3" />Save</a> </div>
+        </div>
+      </div>
+    </form>
+    <!--buttons-end-->
+  </div>
+  <!-- =======tab3 end ==== -->
+
+  <div class="tab-pane fade" id="Preclosurecharges" role="tabpanel" aria-labelledby="Preclosurecharges">
+    <div class="row">
+      <div class="col-12 mt-5 p-0">
+        <p class="bc-2">Pre-Closure Charges</p>
+      </div>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group w-auto">
+            <label>Select Loan Type</label>
+            <select class="form-control ">
+              <option>Applicable to all loan types</option>
+              <option>Vehicle Loan</option>
+              <option>Gold Loan</option>
+              <option>Loan against Property</option>
+              <option>Home Loan</option>
+              <option>Education Loan</option>
+              <option>Term Loan</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group w-auto">
+            <label>Select Loan code</label>
+            <select class="form-control">
+              <option>Applicable to all loan codes</option>
+              <option>2 wheeler Loans</option>
+              <option>4 wheeler Loans</option>
+              <option>Commercial Vehicle Loans</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <label>Min. Lock-in Period before availing preclosure of loan</label>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control" type="text" value="">
+              <div class="input-group-append">
+                <select class="form-control w-auto btn-lg-icon">
+                  <option>Days</option>
+                  <option>Months</option>
+                  <option>Years</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-0">
+        <div class="col-md-12 col-xl-12 mb-0">
+          <div class="form-group mb-0">
+            <h2 class="sec-head">Charge Type</h2>
+            <div class="d-flex">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="chargetype" value="fixedcharge">
+                <label class="mt-1" for="inlineRadio2"> Fixed </label>
+              </div>
+              <div class="fixedcharge radio-toggle">
+                <div class="input-group">
+                  <input class="form-control" type="text" value="Rs.">
+                  <div class="input-group-append">
+                    <span class=" w-auto btn-lg-icon h-100 pt-2 pl-2 pr-2  rounded-right">  P.A </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group m-0">
+            <div class="d-flex">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="chargetype" value="percentagecharge">
+                <label class="mt-1" for="inlineRadio2"> Percentage </label>
+
+
+              </div>
+              <div class="percentagecharge radio-toggle">
+                <div class="form-group m-0">
+                  <div class="input-group">
+                    <input class="form-control" type="text" value="%">
+                    <div class="input-group-append">
+                      <span class=" w-auto btn-lg-icon h-100 pt-2 pl-2 pr-2  rounded-right">  P.A </span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xl-6">
+
+          <div class=" p-2 mb-1 mt-1 percentagecharge radio-toggle border">
+
+
+
+            <label class="sec-head-bold">Pre-Closure interest is calculated on</label>
+            <div class="form-group m-0">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="" value="">
+                <label class="mt-1" for="inlineRadio2"> Future Principal </label>
+              </div>
+            </div>
+            <div class="form-group m-0">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="" value="">
+                <label class="mt-1" for="inlineRadio2">Future Principal and Outstanding Principal</label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xl-4">
+          <h2 class="sec-head-bold mt-1"> GST is</h2>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+              <label class="mt-1" for="inlineRadio1"> Included</label>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="form-group m-0 p-0">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="excluded">
+                <label class="mt-1" for="inlineRadio1"> Excluded </label>
+              </div>
+            </div>
+            <div class="form-group m-0 p-0">
+              <div class=" excluded radio-toggle">
+                <div class="d-flex">
+                  <label class="mt-1 mr-2" for="inlineRadio1"> GST %</label>
+                  <input class="form-control w-auto" type="text" value="%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group m-0 p-0">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gst" value="include">
+              <label class="mt-1" for="inlineRadio1"> No GST</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-xl-12">
+        <div class="d-flex justify-content-end mt-4"> <a href="#" class="btn btn-g-icon mr-4 px-3 border-0"><img src="images/icon-cancel-white.svg" width="20px" height="20px" class="mr-3" />Clear</a> <a href="#penalinterest" data-toggle="tab" class="btn btn-b-icon px-3 border-0" role="tab" aria-controls="hot" aria-selected="false"><img src="images/icon-check-white.svg" width="20px" height="20px" class="mr-3" />Save</a> </div>
+      </div>
+    </form>
+  </div>
+  <!-- =======tab4 end ==== -->
+
+
+</div>
+<!-- ======================================================================= tab Content end ============================================================================== -->

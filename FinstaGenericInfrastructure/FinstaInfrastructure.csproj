@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Accounting\Masters\" />
+    <Folder Include="Accounting\Reports\" />
+    <Folder Include="Accounting\Transactions\" />
+    <Folder Include="Banking\Masters\" />
+    <Folder Include="Banking\Reports\" />
+    <Folder Include="Banking\Transactions\" />
+    <Folder Include="Loans\Reports\" />
+    <Folder Include="Loans\Transactions\" />
+  </ItemGroup>
+
+</Project>

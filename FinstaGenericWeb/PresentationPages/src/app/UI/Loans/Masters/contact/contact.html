@@ -1,0 +1,18 @@
+<form [formGroup]="contactForm">
+  <div class="row">
+    <div class="col-md-12 col-lg-12 col-xl-12">
+      <div class="form-group mt-4 ">
+        <div class="form-check form-check-inline mr-5  ">
+          <input class="form-check-input" type="radio" id="inlineRadio2" value="Individual" formControlName="Contacttype" (click)="contactType_Click('Individual')">
+          <label class="mt-1" for="inlineRadio2"> Individual </label>
+        </div>
+        <div class="form-check form-check-inline mr-5">
+          <input class="form-check-input" type="radio" id="inlineRadio2" value="Business Entity" formControlName="Contacttype" (click)="contactType_Click('Business Entity')">
+          <label class="mt-1" for="inlineRadio2"> Business Entity </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<app-contact-individual [referenceid]="referenceid" [formtype]="formtype" [contactType]="contactType"></app-contact-individual>
+<app-contact-business   [referenceid]="referenceid" [formtype]="formtype" [contactType]="contactType"></app-contact-business>

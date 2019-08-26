@@ -1,0 +1,313 @@
+<div class="col-md-12 col-xl-12">
+  <div class="d-flex justify-content-end">
+    <ol class="breadcrumb mt-2 position-absolute">
+      <li class="breadcrumb-item">{{Data?.Loanname}}</li>
+      <li class="breadcrumb-item">{{Data?.LoannameCode}}</li>
+
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 mt-5  p-0">
+    <p class="bc-2">Loan Configuration</p>
+  </div>
+</div>
+<form [formGroup]="LoanConfiguration">
+  
+
+  <div class="row mt-1">
+    <div class="col-md-6 col-xl-4">
+      <div class="form-group">
+        <label>Applicant Type</label>
+        <select class="form-control" id="e1" style="height:34px; min-width:100px;" formControlName="pApplicanttype" [ngClass]="{ 'is-invalid':  submitted && LoanConfiguration.controls.pApplicanttype.errors }">
+          <option value="" disabled>Select</option>
+          <option *ngFor="let type of ApplicantTypes" [value]="type.pApplicanttype"> {{type.pApplicanttype}}</option>
+        </select>
+        <div *ngIf=" submitted &&  LoanConfiguration.controls.pApplicanttype.errors" class="invalid-feedback">
+          <div *ngIf="LoanConfiguration.controls.pApplicanttype.errors.required">Applicant Type is required</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class=" col-md-4 col-xl-4">
+      <div class="border-box">
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="form-group">
+            <label>Loan pay-in period</label>
+            <select (change)="changevalue($event.target.value)" class="form-control w-auto" formControlName="pLoanpayin" [ngClass]="{ 'is-invalid': submitted &&  LoanConfiguration.controls.pLoanpayin.errors }">
+              <option value="" disabled>Select</option>
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Bi-Weekly</option>
+              <option>Fortnightly</option>
+              <option>Monthly</option>
+              <option>Quarterly</option>
+              <option>Halfyearly</option>
+              <option>Yearly</option>
+            </select>
+            <div *ngIf=" submitted &&  LoanConfiguration.controls.pLoanpayin.errors" class="invalid-feedback">
+              <div *ngIf="LoanConfiguration.controls.pLoanpayin.errors.required">Loan Pay In is required</div>
+            </div>
+            <small class="form-text clr-orange"></small>
+          </div>
+        </div>
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="form-group">
+            <label>Interest Rate Type</label>
+            <select class="form-control w-auto" formControlName="pInteresttype" [ngClass]="{ 'is-invalid': submitted &&  LoanConfiguration.controls.pInteresttype.errors }">
+              <option value="" disabled>Select</option>
+              <option>Flat Interest Rate</option>
+              <option>Diminishing Balance</option>
+            </select>
+            <div *ngIf=" submitted &&  LoanConfiguration.controls.pInteresttype.errors" class="invalid-feedback">
+              <div *ngIf="LoanConfiguration.controls.pInteresttype.errors.required">Interest Rate Type is required</div>
+            </div>
+            <small class="form-text clr-orange"></small>
+          </div>
+        </div>
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <label>Interest Rate per annum</label>
+        </div>
+        <div class="col-md-6 col-xl-6">
+          <div class="form-group">
+
+            <div class="input-group w-auto">
+              <input class="form-control w-50" type="text" value="Rs." formControlName="pRateofinterest" [ngClass]="{ 'is-invalid': submitted &&  LoanConfiguration.controls.pRateofinterest.errors }">
+              <div class="input-group-append">
+                <span class=" w-auto btn-lg-icon h-100 pt-2 pl-2 pr-2  rounded-right"> P.A </span>
+              </div>
+              <div *ngIf=" submitted &&  LoanConfiguration.controls.pRateofinterest.errors" class="invalid-feedback">
+                <div *ngIf="LoanConfiguration.controls.pRateofinterest.errors.required">Interest Rate per annum is required</div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+      <!--col-end-->
+    </div>
+    <div class="col-md-4 col-xl-4">
+      <div class="border-box ">
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="form-group">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1" (change)="CheckBoxCheck1($event)">
+              <label class="form-check-label" for="inlineCheckbox2">Not Applicable</label>
+            </div>
+            <small class="form-text clr-orange"></small>
+          </div>
+        </div>
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="form-group">
+            <label>Minimum Loan Amount</label>
+            <input appMycurrencyFormatter appNumbersonly class="form-control w-auto" maxlength="12" type="text" placeholder="1,00,000" formControlName="pMinloanamount">
+            <small class="form-text clr-orange"></small>
+          </div>
+        </div>
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="form-group">
+            <label>Maximum Loan Amount</label>
+            <input appMycurrencyFormatter appNumbersonly class="form-control w-auto" maxlength="12" type="text" placeholder="10,00,000" formControlName="pMaxloanamount">
+            <small class="form-text clr-orange"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--col-end-->
+
+    <div class="col-md-4 col-xl-4">
+      <div class="border-box ">
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="form-group">
+            <div class="form-check form-check-inline mr-5">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" (change)="CheckBoxCheck2($event)">
+              <label class="form-check-label" for="inlineCheckbox1">Not Applicable</label>
+            </div>
+            <small class="form-text clr-orange"></small>
+          </div>
+        </div>
+        <!--col-end-->
+        <div class="col-md-12 col-xl-12">
+          <div class="row">
+            <div class="col-md-12 col-xl-12">
+              <label class="font-weight-bold">Tenure</label>
+            </div>
+            <div class="col-md-6 col-xl-6">
+              <div class="form-group">
+                <label>From</label>
+                <div class="input-group">
+                  <input appNumbersonly class="form-control" type="text"  maxlength="2" value="" formControlName="pTenurefrom">
+                  <div class="input-group-append">
+                    <label class="w-auto btn-lg-icon  pt-1 pl-1 pr-1 h-100 rounded-right ">{{LoanPayinPeriod}}</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-6">
+              <div class="form-group">
+                <label class="">To</label>
+                <div class="input-group">
+                  <input appNumbersonly class="form-control" type="text" maxlength="2" value="" formControlName="pTenureto">
+                  <div class="input-group-append ">
+                    <label class="w-auto btn-lg-icon  pt-1 pl-1 pr-1 h-100 rounded-right ">{{LoanPayinPeriod}}</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--col-end-->
+      </div>
+    </div>
+    <!--col-end-->
+
+    <div class="d-flex col-md-12 col-xl-12 mt-4 p-0">
+      <div class="col-md-6 col-xl-4">
+        <div class="form-group">
+          <label class="">This loan is effective from</label>
+          <input class="form-control w-auto" type="date" placeholder="Date picker here" formControlName="pEffectfromdate" [ngClass]="{ 'is-invalid': submitted &&  LoanConfiguration.controls.pEffectfromdate.errors }">
+          <div *ngIf=" submitted &&  LoanConfiguration.controls.pEffectfromdate.errors" class="invalid-feedback">
+            <div *ngIf="LoanConfiguration.controls.pEffectfromdate.errors.required">This field is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4 mt-4">
+        <button (click)="AddDataToDataTable()" class="btn btn-b-icon border-0">
+          <img src="assets/images/icon-add-white.svg" width="20px" height="20px" class="mr-3" />Add
+        </button>
+      </div>
+    </div>
+    <!--row-end-->
+  </div>
+
+  <!--row-end-->
+  <!--form-end-->
+  <!--form-end-->
+  <div class="row mt-5">
+    <div class="col-md-12 col-xl-12">
+      <table id="LoanConfigurationTable" class="table text-center" style="width:100%">
+        <thead>
+
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <!--<table id="example2" class="table text-center" style="width:100%">
+        <thead>
+          <tr>
+            <th>Applicant type</th>
+            <th>Pay in</th>
+            <th>Interest Rate Type</th>
+            <th>Interest Rate</th>
+            <th>Min Loan Amt</th>
+            <th>Max Loan Amt</th>
+            <th>Tenure from</th>
+            <th>Tenure to</th>
+            <th>Effective From</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Regular/General</td>
+            <td>Monthly</td>
+            <td>Flat</td>
+            <td>8%</td>
+            <td>100000</td>
+            <td></td>
+            <td>1 year</td>
+            <td>5 years</td>
+            <td>01-Apr-2018</td>
+            <td>
+              <a href="#">
+                <div id="icon-edit"></div>
+              </a> <a href="#">
+                <div id="icon-delete"></div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Senior Citizen</td>
+            <td>Yearly</td>
+            <td>Flat</td>
+            <td>7%</td>
+            <td>1000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <a href="#">
+                <div id="icon-edit"></div>
+              </a> <a href="#">
+                <div id="icon-delete"></div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Regular/General</td>
+            <td>Daily</td>
+            <td>Flat</td>
+            <td>7%</td>
+            <td>1000</td>
+            <td></td>
+            <td>166 days</td>
+            <td>355 days</td>
+            <td>01-Apr-2018</td>
+            <td>
+              <a href="#">
+                <div id="icon-edit"></div>
+              </a> <a href="#">
+                <div id="icon-delete"></div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Regular/General</td>
+            <td>Daily</td>
+            <td>Flat</td>
+            <td>7%</td>
+            <td>1000</td>
+            <td></td>
+            <td>166 days</td>
+            <td>355 days</td>
+            <td>01-Apr-2018</td>
+            <td>
+              <a href="#">
+                <div id="icon-edit"></div>
+              </a> <a href="#">
+                <div id="icon-delete"></div>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>-->
+    </div>
+  </div>
+
+  <!--row-end-->
+  <div class="d-flex justify-content-end mt-4">
+    <a href="#" class="btn btn-g-icon mr-4 px-3 border-0">
+      <img src="assets/images/icon-cancel-white.svg" width="20px" height="20px" class="mr-3" />Clear
+    </a> <a (click)="NextTabClick()" data-toggle="tab" class="btn btn-b-icon px-3 border-0" role="tab"
+            aria-controls="hot" aria-selected="false">
+      <img src="assets/images/icon-chewron-right-whitesolid.svg"
+           width="20px" height="20px" class="mr-3" />Next
+    </a>
+  </div>
+</form>
+<!--buttons-end-->
